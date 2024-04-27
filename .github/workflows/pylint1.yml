@@ -16,8 +16,9 @@ jobs:
      with:
        python-version: 3.8
 
-   - name: Install Bandit
-     run: pip install bandit
+     -name: install Bandit
+   run: pip install bandit
 
-   - name: Run Bandit Scan
-     run: bandit -ll -ii -r . -f json -o bandit-report.json
+    -name: run bandit Scan
+     run:  bandit -r .
+
